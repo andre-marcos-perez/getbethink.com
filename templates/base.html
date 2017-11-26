@@ -1,0 +1,115 @@
+<html>
+	<head>
+		<title>beThink | {% block title %}{% endblock %}</title>
+		<link rel="icon" type="image/png" href=""/>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+		<link rel="stylesheet" href="/static/css/base.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<style>
+			.green {
+				background-color: #00AA8D !important;
+			}
+			.green-light {
+				background-color: #00BF9A !important;
+			}
+			.green-dark {
+				background-color: #008975 !important;
+			}
+			.gray-text {
+				color: #434343 !important;
+			}
+			.gray-text-light {
+				color: #9E9E9E !important;
+			}
+			.green-text {
+				color: #00AA8D !important;
+			}
+			.green-text-light {
+				color: #00BF9A !important;
+			}
+			.green-text-dark {
+				color: #008975 !important;
+			}
+		</style>
+		{% block styles %}
+
+		{% endblock %}
+	</head>
+	<body style="font-family:Comfortaa, sans-serif; background-image: url('/static/images/index_introImage.png');background-attachment:fixed;background-size:cover;background-position:50% 70%;background-repeat: no-repeat;">
+		<header>
+			<div class="navbar-fixed">
+				<nav class="white z-depth-2" style="position:fixed; top:25px">
+					<div class="nav-wrapper container">
+						<a href="/" class="gray-text" style="font-size:25px"><b class="green-text">b e </b>T h i n k</a>
+						<ul class="right hide-on-med-and-down">
+							{% if session.is_logged %}
+							{% else %}
+							<li><a class="gray-text-light" href="#why">why</a></li>
+							<li><a class="gray-text-light" href="#who">who</a></li>
+							<li><a class="gray-text-light" href="#us">us</a></li>
+							<li><a class="gray-text-light" href="#contact">contact</a></li>
+							{% endif %}
+							{% if session.is_logged %}
+							<li><a class="waves-effect waves-light btn green" href="#">notebook</a></li>
+							{% else %}
+							<li><a class="waves-effect waves-light btn green" style="text-transform:lowercase" href="#"><b>login</b></a></li>
+							{% endif %}
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main>
+
+
+			{% block content %}
+
+			{% endblock %}
+		</main>
+		<footer class="page-footer green">
+			<div class="container section scrollspy" id="contact">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5 class="white-text"><strong>Contact us</strong></h5>
+						<div class="input-field">
+							<input id="name" type="text" class="validate white-text" style="border-bottom: 1px solid #eeeeee; box-shadow: 0 1px 0 0 #eeeeee;">
+							<label for="name" class="white-text">Name</label>
+						</div>
+						<div class="input-field">
+							<input id="mail" type="text" class="validate white-text" style="border-bottom: 1px solid #eeeeee; box-shadow: 0 1px 0 0 #eeeeee;">
+							<label for="mail" class="white-text">Mail</label>
+						</div>
+						<div class="input-field">
+							<input id="message" type="text" class="validate white-text" style="border-bottom: 1px solid #eeeeee; box-shadow: 0 1px 0 0 #eeeeee;">
+							<label for="message" class="white-text">Message</label>
+						</div>
+					</div>
+					<div class="col l6 s12">
+
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright green-dark">
+				<div class="container">
+					<a class="white-text" href="https://www.linkedin.com/in/andremarcosperez/" target="_blank"> All rights reserved 2017 | <b>André Perez</b></a> e <a  class="grey-text text-lighten-4" href="https://www.linkedin.com/in/lu%C3%ADza-zuvanov-300536148/" target="_blank"><b>Luíza Zuvanov</b></a>
+				</div>
+			</div>
+		</footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.scrollspy').scrollSpy();
+				$('.parallax').parallax();
+				{% block scriptsReady %}
+
+				{% endblock %}
+			});
+		</script>
+		{% block scripts %}
+
+		{% endblock %}
+	</body>
+</html>
