@@ -1,0 +1,31 @@
+.index-who{
+
+    background-image: url('/static/images/index_usp.png');
+    width:auto;
+    max-width:500px;
+    height:auto;
+    max-height:75px;
+}
+
+.index-who:hover{
+
+    background-image: url('/static/images/index_unb.png');
+}
+
+.signup-card {
+
+  position:relative;
+  top:50;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+}
+
+.index-about-icon {
+
+  font-size:5em !important;
+}
+
+.index-about-text {
+
+  font-size:1.3em !important;
+}

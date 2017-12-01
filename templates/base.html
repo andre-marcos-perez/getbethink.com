@@ -5,111 +5,88 @@
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
-		<link rel="stylesheet" href="/static/css/base.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<style>
-			.green {
-				background-color: #00AA8D !important;
-			}
-			.green-light {
-				background-color: #00BF9A !important;
-			}
-			.green-dark {
-				background-color: #008975 !important;
-			}
-			.gray-text {
-				color: #434343 !important;
-			}
-			.gray-text-light {
-				color: #9E9E9E !important;
-			}
-			.green-text {
-				color: #00AA8D !important;
-			}
-			.green-text-light {
-				color: #00BF9A !important;
-			}
-			.green-text-dark {
-				color: #008975 !important;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="/static/css/base.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/color.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/form.css">
 		{% block styles %}
 
 		{% endblock %}
 	</head>
-	<body style="font-family:Comfortaa, sans-serif; background-image: url('/static/images/index_introImage.png');background-attachment:fixed;background-size:cover;background-position:50% 70%;background-repeat: no-repeat;">
+	<body style="font-family:Comfortaa, sans-serif;">
+		<div class="responsive-img" style="background-image: url('/static/images/index_intro.png');
+																			 background-repeat: no-repeat;
+																			 background-size:cover;
+																			 background-attachment:fixed;
+									 										 background-position:center center;">
 		<header>
 			<div class="navbar-fixed">
-				<nav class="white z-depth-2" style="position:fixed; top:25px">
+				<div id="nav-anchor"></div>
+				<nav id="nav" class="white z-depth-2 nav-offset-on">
 					<div class="nav-wrapper container">
-						<a href="/" class="gray-text" style="font-size:25px"><b class="green-text">b e </b>T h i n k</a>
-						<ul class="right hide-on-med-and-down">
-							{% if session.is_logged %}
-							{% else %}
-							<li><a class="gray-text-light" href="#why">why</a></li>
-							<li><a class="gray-text-light" href="#who">who</a></li>
-							<li><a class="gray-text-light" href="#us">us</a></li>
-							<li><a class="gray-text-light" href="#contact">contact</a></li>
-							{% endif %}
-							{% if session.is_logged %}
-							<li><a class="waves-effect waves-light btn green" href="#">notebook</a></li>
-							{% else %}
-							<li><a class="waves-effect waves-light btn green" style="text-transform:lowercase" href="#"><b>login</b></a></li>
-							{% endif %}
+						<a href="#intro" class="gray-text hide-on-small-only" style="letter-spacing:10px;font-size:25px"><b class="green-text">be</b>Think</a>
+						<a href="#intro" class="gray-text brand-logo center hide-on-med-and-up" style="letter-spacing:10px;font-size:25px"><b class="green-text">be</b>Think</a>
+						<ul class="right hide-on-small-only">
+							<li><a class="gray-text-light" href="#solution">solução</a></li>
+							<li><a class="gray-text-light" href="#who">parceiros</a></li>
+							<li><a class="gray-text-light" href="#media">midia</a></li>
+							<li><a class="gray-text-light" href="#contact">contato</a></li>
+							<li><a class="waves-effect waves-light btn green white-text" style="text-transform:lowercase" href="#"><b>entrar</b></a></li>
 						</ul>
+						<a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-med-and-up"><i class="material-icons gray-text-light">menu</i></a>
 					</div>
 				</nav>
 			</div>
+			<ul id="nav-mobile" class="side-nav fixed hide-on-med-and-up" style="transform:translateX(-100%)">
+				<div class="card z-depth-0" style="margin-top:14px">
+					<div class="card-content">
+						<a href="#intro" class="card-title gray-text center" style="letter-spacing:10px;font-size:25px"><b class="green-text">be</b>Think</a>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<li class="bold white"><a class="gray-text-light waves-effect" href="#solution">solução</a></li>
+				<li class="bold white"><a class="gray-text-light waves-effect" href="#who">parceiros</a></li>
+				<li class="bold white"><a class="gray-text-light waves-effect" href="#media">midia</a></li>
+				<li class="bold white"><a class="gray-text-light waves-effect" href="#contact">contato</a></li>
+				<div class="divider"></div>
+      </ul>
 		</header>
 		<main>
-
-
 			{% block content %}
 
 			{% endblock %}
 		</main>
-		<footer class="page-footer green">
-			<div class="container section scrollspy" id="contact">
-				<div class="row">
-					<div class="col l6 s12">
-						<h5 class="white-text"><strong>Contact us</strong></h5>
-						<div class="input-field">
-							<input id="name" type="text" class="validate white-text" style="border-bottom: 1px solid #eeeeee; box-shadow: 0 1px 0 0 #eeeeee;">
-							<label for="name" class="white-text">Name</label>
-						</div>
-						<div class="input-field">
-							<input id="mail" type="text" class="validate white-text" style="border-bottom: 1px solid #eeeeee; box-shadow: 0 1px 0 0 #eeeeee;">
-							<label for="mail" class="white-text">Mail</label>
-						</div>
-						<div class="input-field">
-							<input id="message" type="text" class="validate white-text" style="border-bottom: 1px solid #eeeeee; box-shadow: 0 1px 0 0 #eeeeee;">
-							<label for="message" class="white-text">Message</label>
-						</div>
-					</div>
-					<div class="col l6 s12">
-
-					</div>
-				</div>
-			</div>
-			<div class="footer-copyright green-dark">
+		<footer class="page-footer green" style="padding:0">
+			<div class="footer-copyright green">
 				<div class="container">
-					<a class="white-text" href="https://www.linkedin.com/in/andremarcosperez/" target="_blank"> All rights reserved 2017 | <b>André Perez</b></a> e <a  class="grey-text text-lighten-4" href="https://www.linkedin.com/in/lu%C3%ADza-zuvanov-300536148/" target="_blank"><b>Luíza Zuvanov</b></a>
+					© 2017 beThink | Projetado por <a  class="grey-text text-lighten-4" href="https://www.linkedin.com/in/lu%C3%ADza-zuvanov-300536148/" target="_blank"><b>Luíza Zuvanov</b></a> e desenvolvido por <a class="white-text" href="https://www.linkedin.com/in/andremarcosperez/" target="_blank"> <b>André Perez</b></a>
 				</div>
 			</div>
 		</footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+		<script type="text/javascript" src="/static/javascript/base.js"></script>
 		<script>
 			$(document).ready(function(){
+
+				$('.button-collapse').sideNav({
+				    menuWidth: 250,
+				    edge: 'left',
+				    closeOnClick: true
+				  }
+				);
 				$('.scrollspy').scrollSpy();
 				$('.parallax').parallax();
 				{% block scriptsReady %}
 
 				{% endblock %}
 			});
+
 		</script>
+		<script>
 		{% block scripts %}
 
 		{% endblock %}
+		</script>
 	</body>
 </html>

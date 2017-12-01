@@ -1,0 +1,27 @@
+.green {
+  background-color: #00AA8D !important;
+}
+.green-light {
+  background-color: #00BF9A !important;
+}
+.green-dark {
+  background-color: #008975 !important;
+}
+.gray-text {
+  color: #434343 !important;
+}
+.gray-text-light {
+  color: #9E9E9E !important;
+}
+.green-text {
+  color: #00AA8D !important;
+}
+.green-text-light {
+  color: #00BF9A !important;
+}
+.green-text-dark {
+  color: #008975 !important;
+}
+.red {
+  background-color: #FF2D2D !important;
+}

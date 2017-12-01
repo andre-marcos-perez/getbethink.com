@@ -6,101 +6,560 @@
 
 	{% endblock %}
 
+	{% block styles %}
+	<link rel="stylesheet" href="/static/css/index.css">
+	{% endblock %}
+
 	{% block content %}
-
-
-  <div style="vertical-align: top !important;">
-
-    <div class="row" style="margin-bottom:100px">
-      <div class="container">
-        <div id="intro" class="section scrollspy">
-          <div class="col s8">
-          </div>
-          <div class="col s4">
-						<div class="card" style="position:relative; top:50; background: rgba(255, 255, 255, 0.8); border-radius: 25px;">
-	            <div class="card-content gray-text center">
-	              <span class="card-title left-align">free your <b>data</b> from <b>paper</b></span>
-								<div class="input-field">
-									<input id="name" type="text" class="validate gray-text" style="border-bottom: 1px solid #00AA8D; box-shadow: 0 1px 0 0 #00AA8D;">
-									<label for="name" class="green-text">username</label>
-								</div>
-								<div class="input-field">
-									<input id="institution" type="text" class="validate gray-text" style="border-bottom: 1px solid #00AA8D; box-shadow: 0 1px 0 0 #00AA8D;">
-									<label for="institution" class="green-text">institution</label>
-								</div>
-								<div class="input-field">
-									<input id="email" type="text" class="validate gray-text" style="border-bottom: 1px solid #00AA8D; box-shadow: 0 1px 0 0 #00AA8D;">
-									<label for="email" class="green-text">email</label>
-								</div>
-								<div class="input-field">
-									<input id="password" type="text" class="validate gray-text" style="border-bottom: 1px solid #00AA8D; box-shadow: 0 1px 0 0 #00AA8D;">
-									<label for="password" class="green-text">password</label>
-								</div>
-								<a class="waves-effect waves-light btn green" style="text-transform:lowercase" href="#"><b>signup</b></a>
-	            </div>
-	          </div>
+  <div class="row" style="margin-bottom:100px">
+    <div class="container">
+      <div id="intro" class="section scrollspy">
+        <div class="col s12 m6 offset-m6 l4 offset-l8">
+					<div class="card signup-card">
+            <div class="card-content gray-text center">
+              <span class="card-title left-align">inscreva-se e fique por dentro das novidades da <a class="gray-text style" style="letter-spacing:10px;"><b class="green-text">be</b>Think</a></span>
+							<div class="input-field">
+								<input id="username" type="text" class="validate">
+								<label for="username">nome</label>
+							</div>
+							<div class="input-field">
+								<input id="institution" type="text" class="validate">
+								<label for="institution">instituição</label>
+							</div>
+							<div class="input-field">
+								<input id="email" type="email" class="validate">
+								<label for="email">email</label>
+							</div>
+							<a class="waves-effect waves-light btn green white-text" style="text-transform:lowercase" href="#"><b>inscrever</b></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="row white" style="margin:0px">
-      <div class="container">
-        <div id="why" class="section scrollspy">
-          <div class="col s12">
-            <h1 class="green-text">Why</h1>
-          </div>
-          <div class="col s12">
-            <h1 class="green-text">Why</h1>
-          </div>
-          <div class="col s12">
-            <h1 class="green-text">Why</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row green" style="margin:0px">
-      <div class="container">
-        <div id="who" class="section scrollspy">
-          <div class="col s12">
-            <h1 class="white-text">Who</h1>
-          </div>
-          <div class="col s12">
-            <h1 class="white-text">Who</h1>
-          </div>
-          <div class="col s12">
-            <h1 class="white-text">Who</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="row white" style="margin:0px">
-      <div class="container">
-        <div id="us" class="section scrollspy">
-          <div class="col s12">
-            <h1 class="green-text">Us</h1>
-          </div>
-          <div class="col s12">
-            <h1 class="green-text">Us</h1>
-          </div>
-          <div class="col s12">
-            <h1 class="green-text">Us</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </div>
-
+	</div>
+  <div id="solution" class="row green section scrollspy" style="margin:0px">
+    <div class="container">
+      <div>
+				<div class="row green"></div>
+				<div class="col s12">
+					<div class="row green">
+						<div class="col s12 m4">
+							<div class="row" style="margin:0px">
+								<div class="col s1">
+									<div style="background:white;width:6px;height:50px;margin-top:30px"></div>
+								</div>
+								<div class="col s10">
+									<h4 class="gray-text" style="float:left">caderno<br>digital de<br>laboratório</h4>
+								</div>
+							</div>
+						</div>
+						<div class="col s12 m8">
+							<h5 class="gray-text">gaste energia com o que importa</h5>
+							<p class="white-text">
+								Já  imaginou uma ata de laboratório totalmente dinâmica que te liberte da rotina de passar a limpo todas as tarefas do seu dia?
+								Nós da beThink queremos que isso se torne realidade!
+								A partir de um banco de dados, você poderá escolher o protocolo a ser utilizado, modificá-lo e ainda adicionar fotos ou áudios ao longo do experimento.
+								Depois, é só clicar em “finalizar” que suas anotações aparecerão de forma automática e organizada.
+								Confira nosso exemplo para purificação de DNA plasmidial, a famosa Miniprep.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m5 offset-m1">
+					<div class="row">
+						<div class="card z-depth-5" style="border-radius:25px;">
+							<div class="card-content white green-text" style="padding-bottom:0px">
+								<div class="row valign-wrapper">
+									<div class="col s3">
+										<a class="btn-floating btn waves-effect waves-light green white-text hovarable"><b>1</b></a>
+									</div>
+									<div class="col s6 center">
+										<h5><b>material</b></h5>
+									</div>
+									<div class="col s3">
+										<a  class='dropdown-button' href='#dropdown1' data-activates='dropdown1'><i class="material-icons green-text" >menu</i></a>
+										<ul id='dropdown1' class='dropdown-content'>
+											<li><a href="#!"><i class="material-icons">add_a_photo</i></a></li>
+											<li class="divider"></li>
+											<li><a href="#!"><i class="material-icons">keyboard_voice</i></a></li>
+											<li class="divider"></li>
+											<li><a href="#!"><i class="material-icons">format_color_text</i></a></li>
+											<li class="divider"></li>
+											<li><a href="#!"><i class="material-icons">question_answer</i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="card-action">
+								<p>Check if you have the following material:</p>
+								<div class="divider"></div>
+								<div class="row">
+								</div>
+								<form action="#">
+									<div class="row">
+										<div class="col s1">
+											<input type="checkbox" class="filled-in" id="checkbox-1"/>
+											<label for="checkbox-1">
+										</div>
+										<div class="col s2 offset-s1">11ml</div>
+										<div class="col s8">Cell Lysis Buffer</div>
+									</div>
+									<div class="row">
+										<div class="col s1">
+											<input type="checkbox" class="filled-in" id="checkbox-2"/>
+											<label for="checkbox-2">
+										</div>
+										<div class="col s2 offset-s1">36ml</div>
+										<div class="col s8">Neutralization Solution</div>
+									</div>
+									<div class="row">
+										<div class="col s1">
+											<input type="checkbox" class="filled-in" id="checkbox-3"/>
+											<label for="checkbox-3">
+										</div>
+										<div class="col s2 offset-s1">20ml</div>
+										<div class="col s8">Endotoxin Removal</div>
+									</div>
+									<div class="row">
+										<div class="col s1">
+											<input type="checkbox" class="filled-in" id="checkbox-4"/>
+											<label for="checkbox-4">
+										</div>
+										<div class="col s2 offset-s1">9ml</div>
+										<div class="col s8">Column Wash Solution</div>
+									</div>
+									<div class="row">
+										<div class="col s1">
+											<input type="checkbox" name="foo" class="filled-in" id="checkbox-7"/>
+											<label for="checkbox-7">
+										</div>
+										<div class="col s2 offset-s1">2x50</div>
+										<div class="col s8">Collection Tubes</div>
+									</div>
+								</form>
+								<div class="divider"></div>
+								<div class="row">
+								</div>
+								<div class="center-align">
+									<a class="waves-effect waves-light btn" style="text-transform:lowercase"><b>start</b></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4 offset-m1">
+					<div class="row">
+						<div class="card z-depth-5" style="border-radius:25px;">
+							<div class="card-content white green-text" style="padding-bottom:0px">
+								<div class="row valign-wrapper">
+									<div class="col s3">
+										<a class="btn-floating btn waves-effect waves-light green white-text hovarable"><b>2</b></a>
+									</div>
+									<div class="col s6 center">
+										<h5><b>elute</b></h5>
+									</div>
+									<div class="col s3">
+										<a  class='dropdown-button' href='#dropdown2' data-activates='dropdown2'><i class="material-icons green-text">menu</i></a>
+										<ul id='dropdown2' class='dropdown-content'>
+											<li class="center-align !important"><a href="#!"><i class="material-icons">add_a_photo</i></a></li>
+											<li class="divider"></li>
+											<li><a href="#!"><i class="material-icons">keyboard_voice</i></a></li>
+											<li class="divider"></li>
+											<li><a href="#!"><i class="material-icons">format_color_text</i></a></li>
+											<li class="divider"></li>
+											<li><a href="#!"><i class="material-icons">question_answer</i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="card-action">
+								<p>
+								Centrifuge at maximum speed in a microcentrifuge for 15 seconds to elute the plasmid DNA. Cap the
+								microcentrifuge tube, and store eluted plasmid DNA at –20°C.
+								</p>
+								<div class="divider"></div>
+								<div class="row">
+								</div>
+								<div class="row center">
+									<div class="col s12">
+										<a class="btn-floating btn waves-effect waves-light red hovarable">
+											<i class="material-icons">timer</i>
+										</a>
+									</div>
+									<div class="col s12">
+										<div class="row">
+										</div>
+										<p>Start timer: 15 seconds</p>
+									</div>
+								</div>
+								<div class="divider"></div>
+								<div class="row">
+								</div>
+								<div class="center-align">
+									<a class="waves-effect waves-light btn" style="text-transform:lowercase"><b>finish</b></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col s12">
+					<div class="row green">
+						<div class="col s12 m4 hide-on-med-and-up">
+							<div class="row" style="margin:0px">
+								<div class="col s1">
+									<div style="background:white;width:6px;height:50px;margin-top:30px"></div>
+								</div>
+								<div class="col s10">
+									<h4 class="gray-text" style="float:left">feito por<br>cientistas<br>para<br>cientistas</h4>
+								</div>
+							</div>
+						</div>
+						<div class="col s12 m8">
+							<h5 class="gray-text">ganhe produtividade e conectividade</h5>
+							<p class="white-text">
+							Em uma era de distâncias curtas e interações instantâneas, a ciência precisa se manter conectada!
+							Pensando nisso, elaboramos uma caderno de laboratório digital que permite uma melhor organização e gerenciamento de equipes e projetos.
+							Colabore com diversos pesquisadores sem que nenhum dado seja deixado para trás.
+							E não se preocupe, a beThink garante segurança de toda sua pesquisa e deixa o processo de divulgação para os realizadores do prêmio Nobel.
+							</p>
+						</div>
+						<div class="col s12 m4 hide-on-small-only">
+							<div class="row" style="margin:0px">
+								<div class="col s1">
+									<div style="background:white;width:6px;height:50px;margin-top:30px"></div>
+								</div>
+								<div class="col s10">
+									<h4 class="gray-text" style="float:left">feito por<br>cientistas<br>para<br>cientistas</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4 section scrollspy">
+					<div class="card green z-depth-0 center">
+						<div class="card-content">
+							<i class="material-icons white-text index-about-icon">device_hub</i>
+							<p class="gray-text index-about-text">crie<br>projetos<br>colaborativos</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<div class="card green z-depth-0 center">
+						<div class="card-content">
+							<i class="material-icons white-text index-about-icon">supervisor_account</i>
+							<p class="gray-text index-about-text">gerencie<br>os membros<br>da sua equipe</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<div class="card green z-depth-0 center">
+						<div class="card-content">
+							<i class="material-icons white-text index-about-icon">filter_drama</i>
+							<p class="gray-text index-about-text">acesse<br>seus dados de<br>qualquer lugar</p>
+						</div>
+					</div>
+				</div>
+        <div class="col s12 m4 section scrollspy">
+					<div class="card green z-depth-0 center">
+            <div class="card-content">
+							<i class="material-icons white-text index-about-icon">lock_outline</i>
+							<p class="gray-text index-about-text">sua pesquisa<br>armazenada<br>com segurança</p>
+            </div>
+          </div>
+				</div>
+				<div class="col s12 m4">
+					<div class="card green z-depth-0 center">
+						<div class="card-content">
+							<i class="material-icons white-text index-about-icon">phonelink</i>
+							<p class="gray-text index-about-text">use e abuse das<br>versões<br>web e mobile</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<div class="card green z-depth-0 center">
+						<div class="card-content">
+							<i class="material-icons white-text index-about-icon">flare</i>
+							<p class="gray-text index-about-text">seus dados<br>em um só<br>lugar</p>
+						</div>
+					</div>
+				</div>
+      </div>
+    </div>
+  </div>
+  <div class="row white" style="margin:0px">
+    <div class="container">
+      <div id="who" class="section scrollspy">
+        <div class="col s12 m6">
+          <h4 class="gray-text-light">inscreva-se agora e acompanhe o porquê da <a class="gray-text style" style="letter-spacing:10px;"><b class="green-text">be</b>Think</a>estar sendo desenvolvida em parceria com laboratórios da USP e UnB</h4>
+        </div>
+        <div class="col s12 m6">
+					<div class="row">
+						<div class="col s12">
+							<div class="card z-depth-0">
+								<div class="card-panel center z-depth-0">
+									<img class="responsive-img index-who" src="/static/images/index_usp-gray.png">
+								</div>
+							</div>
+						</div>
+						<div class="col s12">
+							<div class="card z-depth-0">
+								<div class="card-panel center z-depth-0">
+									<img class="responsive-img index-who" src="/static/images/index_unb-gray.png">
+								</div>
+							</div>
+						</div>
+					</div>
+        </div>
+      </div>
+    </div>
+  </div>
+	<div class="row green" style="margin:0px">
+    <div class="container">
+      <div id="media" class="section scrollspy">
+        <div class="col s12">
+          <div class="row green">
+						<div class="col s12 m4">
+							<div style="background:white;width:6px;height:50px;margin-top:30px;margin-right:15px;float:left"></div>
+							<h4 class="gray-text" style="float:left">ao<br>infinito<br>e além</h4>
+						</div>
+						<div class="col s12 m8">
+							<h5 class="gray-text">a pandemia digital chega ao Brasil</h5>
+							<p class="white-text">
+								Em tempos árduos, o papel foi bastante rabiscado.
+								Hoje, estamos em uma nova era!
+								Aproveite o seu melhor e entenda porque nossa ideia foi premiada em primeiro lugar no hackathon <i>“usando tecnologia para aumentar a produção cientifica”</i> realizado pela USP.
+								Confira também algumas reportagens sobre nossa história.
+							</p>
+						</div>
+          </div>
+        </div>
+				<div class="col s12">
+					<div class="carousel carousel-slider hide-on-small-only" data-indicators="true">
+						<div class="carousel-item green white-text" href="#one!">
+							<div class="row">
+								<div class="col s12 m4 offset-m1">
+									<div class="card z-depth-5" style="border-radius:25px;height:330px">
+										<div class="card-content gray-text">
+											<a href="http://jornal.usp.br/universidade/hackathonusp-traz-solucoes-tecnologicas-para-melhorar-pesquisa/" target="_blank">
+												<b>HackathonUSP traz soluções tecnológicas para melhorar pesquisa</b>
+											</a><br>
+											<div class="row"></div>
+											<span class="gray-text-light" style="font-size:10px">12/09/2017 | Jornal da USP</span>
+											<div class="row"></div>
+											<i>“A ideia é inverter o fluxo da informação.
+												O pesquisador escolhe o experimento e o software diz qual é o passo que deve ser feito naquele momento, além de indicar quais dados devem ser coletados naquela etapa."
+											</i>
+										</div>
+									</div>
+								</div>
+								<div class="col s12 m5 offset-m1">
+									<div class="card z-depth-5" style="border-radius:25px;height:330px">
+										<div class="card-content gray-text">
+											<a href="https://www.jornalpp.com.br/cidade-sitemap/item/124263-alunos-da-usp-sao-finalistas-em-programa-do-instituto-tim" target="_blank">
+												<b>Alunos da USP são finalistas em programa do Instituto TIM</b>
+											</a><br>
+											<div class="row"></div>
+											<span class="gray-text-light" style="font-size:10px">22/06/2017 | Primeira Página</span>
+											<div class="row"></div>
+											<i>“...um aplicativo para smartphones que promoverá a automatização de captura de dados para laboratórios de pesquisa e desenvolvimento...,
+												diminuindo o tempo e os gastos com o processo de coleta e facilitando o compartilhamento das informações obtidas, além de tornar os resultados mais confiáveis."
+											</i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item green white-text" href="#two!">
+							<div class="row">
+								<div class="col s12 m5 offset-m1">
+									<div class="card z-depth-5" style="border-radius:25px;height:330px">
+										<div class="card-content gray-text">
+											<a href="http://www.eesc.usp.br/portaleesc/index.php?option=com_content&view=article&id=3972&catid=2&Itemid=164" target="_blank">
+												<b>Projeto de aluno da EESC conquista o primeiro lugar no "HackathonUSP 2017"</b>
+											</a><br>
+											<div class="row"></div>
+											<span class="gray-text-light" style="font-size:10px">21/09/2017 | Portal EESC</span>
+											<div class="row"></div>
+											<i>“é muito gratificante saber que a beThink tem potencial para ajudar a ciência brasileira,
+												uma vez que a vitória validou a solução criada para um problema real cuja relevância foi comprovada depois de meses de trabalho."
+											</i>
+										</div>
+									</div>
+								</div>
+								<div class="col s12 m4 offset-m1">
+									<div class="card z-depth-5" style="border-radius:25px;height:330px">
+										<div class="card-content gray-text">
+											<a href="http://www.eesc.usp.br/portaleesc/index.php?option=com_content&view=article&id=3972&catid=2&Itemid=164" target="_blank">
+												<b>Projeto de aluno da EESC conquista o primeiro lugar no "HackathonUSP 2017"</b>
+											</a><br>
+											<div class="row"></div>
+											<span class="gray-text-light" style="font-size:10px">21/09/2017 | Portal EESC</span>
+											<div class="row"></div>
+											<i>“é muito gratificante saber que a beThink tem potencial para ajudar a ciência brasileira,
+												uma vez que a vitória validou a solução criada para um problema real cuja relevância foi comprovada depois de meses de trabalho."
+											</i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel carousel-slider hide-on-med-and-up" data-indicators="true">
+						<div class="carousel-item green white-text" href="#one!">
+							<div class="row">
+								<div class="col s12">
+									<div class="card z-depth-5" style="border-radius:25px;height:330px">
+										<div class="card-content gray-text">
+											<a href="http://jornal.usp.br/universidade/hackathonusp-traz-solucoes-tecnologicas-para-melhorar-pesquisa/" target="_blank">
+												<b>HackathonUSP traz soluções tecnológicas para melhorar pesquisa</b>
+											</a><br>
+											<div class="row"></div>
+											<span class="gray-text-light" style="font-size:10px">12/09/2017 | Jornal da USP</span>
+											<div class="row"></div>
+											<i>“A ideia é inverter o fluxo da informação.
+												O pesquisador escolhe o experimento e o software diz qual é o passo que deve ser feito naquele momento, além de indicar quais dados devem ser coletados naquela etapa."
+											</i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item green white-text" href="#two!">
+							<div class="row">
+								<div class="col s12">
+									<div class="card z-depth-5" style="border-radius:25px;height:330px">
+										<div class="card-content gray-text">
+											<a href="https://www.jornalpp.com.br/cidade-sitemap/item/124263-alunos-da-usp-sao-finalistas-em-programa-do-instituto-tim" target="_blank">
+												<b>Alunos da USP são finalistas em programa do Instituto TIM</b>
+											</a><br>
+											<div class="row"></div>
+											<span class="gray-text-light" style="font-size:10px">22/06/2017 | Primeira Página</span>
+											<div class="row"></div>
+											<i>“...um aplicativo para smartphones que promoverá a automatização de captura de dados para laboratórios de P&D...,<br>
+												diminuindo o tempo e os gastos com o processo de coleta e facilitando o compartilhamento das informações obtidas, além de tornar os resultados mais confiáveis."
+											</i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item green white-text" href="#three!">
+							<div class="col s12">
+								<div class="card z-depth-5" style="border-radius:25px;">
+									<div class="card-content gray-text">
+										<a href="http://www.eesc.usp.br/portaleesc/index.php?option=com_content&view=article&id=3972&catid=2&Itemid=164" target="_blank">
+											<b>Projeto de aluno da EESC conquista o primeiro lugar no "HackathonUSP 2017"</b>
+										</a><br>
+										<div class="row"></div>
+										<span class="gray-text-light" style="font-size:10px">21/09/2017 | Portal EESC</span>
+										<div class="row"></div>
+										<i>“é muito gratificante saber que a beThink tem potencial para ajudar a ciência brasileira,
+											uma vez que a vitória validou a solução criada para um problema real cuja relevância foi comprovada depois de meses de trabalho."
+										</i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row"></div>
+				<div class="col s12">
+          <div class="row green">
+						<div class="col s12 m4 hide-on-med-and-up">
+							<div class="row" style="margin:0px">
+								<div class="col s1">
+									<div style="background:white;width:6px;height:50px;margin-top:30px"></div>
+								</div>
+								<div class="col s10">
+									<h4 class="gray-text">gostou<br>do que<br>viu?</h4>
+								</div>
+							</div>
+						</div>
+						<div class="col s12 m8">
+							<h5 class="gray-text">Ajude a beThink a ir mais longe</h5>
+							<span class="white-text">
+							Caso tenha se interessado ou apenas deseja dar aquela mãozinha, mande-nos um email.
+							Adoraríamos conhecer novos pesquisadores, investidores, programadores, designers, etc.
+							Críticas e sugestões são muito bem vindas.
+							Afinal, a beThink foi pensada para ajudar àqueles que desenvolvem ciência e tecnologia para o Brasil!
+						</span>
+						</div>
+						<div class="col s12 m4 hide-on-small-only">
+							<div class="row" style="margin:0px">
+								<div class="col s1">
+									<div style="background:white;width:6px;height:50px;margin-top:30px"></div>
+								</div>
+								<div class="col s10">
+									<h4 class="gray-text">gostou<br>do que<br>viu?</h4>
+								</div>
+							</div>
+						</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	<div class="row white" style="margin:0px">
+		<div class="container">
+			<div id="contact" class="section scrollspy">
+				<div class="col s12">
+          <div class="row white">
+						<div class="col s12 m4">
+							<div class="row" style="margin:0px">
+								<div class="col s1">
+									<div style="background:#00AA8D;width:6px;height:50px;margin-top:30px"></div>
+								</div>
+								<div class="col s10">
+									<h4 class="gray-text">quer<br>saber<br>mais?</h4>
+								</div>
+							</div>
+						</div>
+						<div class="col s12 m8">
+							<h5 class="gray-text">entre em contato</h5>
+							<div class="card-content gray-text center">
+								<div class="input-field">
+									<input id="contact_name" type="text" class="validate" data-length="50">
+									<label for="contact_name">nome completo</label>
+								</div>
+								<div class="input-field">
+									<input id="contact_email" type="email" class="validate" data-length="50">
+									<label for="contact_email">email</label>
+								</div>
+								<div class="input-field">
+									<textarea id="contact_msg" type="text" class="materialize-textarea" data-length="140"></textarea>
+									<label for="contact_msg">mensagem</label>
+								</div>
+								<button class="waves-effect waves-light btn green" style="text-transform:lowercase">
+									<b>enviar</b>
+								</button>
+	            </div>
+						</div>
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
 	{% endblock %}
 
   {% block scriptsReady %}
 
+	$('.carousel.carousel-slider').carousel({fullWidth: true});
+
   {% endblock %}
 
 	{% block scripts %}
+
+	$('.dropdown-button').dropdown({
+       inDuration: 300,
+       outDuration: 225,
+       constrainWidth: false, // Does not change width of dropdown to that of the activator
+       hover: false, // Activate on hover
+       gutter: 0, // Spacing from edge
+       belowOrigin: false, // Displays dropdown below the button
+       alignment: 'left', // Displays dropdown with edge aligned to the left of button
+       stopPropagation: false // Stops event propagation
+     }
+   );
 
 	{% endblock %}

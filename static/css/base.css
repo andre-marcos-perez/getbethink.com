@@ -7,3 +7,25 @@ body {
 main {
   flex: 1 0 auto;
 }
+
+.nav-offset-on {
+  position:fixed;
+  top:25px;
+}
+
+#nav {
+
+}
+
+#nav.nav-offset-off {
+  position: fixed;
+  margin-top: 0 !important;
+  top: 0;
+  z-index: 1;
+}
+
+a:link, a:visited {
+    color: #434343;
+    text-decoration: none;
+    cursor: auto;
+}
